@@ -1,0 +1,298 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home .navbar
+{
+    border-bottom: 1px solid rgba(255, 255, 255, .9);
+}
+.home .brd
+{
+    height: 40px;
+    width: 1px;
+    background-color: #fff;
+    position: relative;
+    left:10;
+    top:15;
+}
+.home .bg-color
+{
+    background-color: rgba(1, 98, 151, 0.70);
+}
+.spacing
+{
+    padding: 5px;
+}
+
+.home .carousel-item h1
+{
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+.home .carousel-item p
+{
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-delay: .2s;
+}
+.home .carousel-item button
+{
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-delay: .4s;
+    opacity: .9;
+    margin-bottom: 20%;
+}
+@keyframes zoom
+{
+    0%{transform: scale(0,0); opacity: 0;}
+    100%{transform: scale(1,1);opacity: 1;}
+}
+.home .carousel-item h1
+{
+    font-size: 90px;
+    font-weight: 700;
+}
+#about .btn
+{
+    border-radius: 0%;
+    font-size: 12px;
+    font-weight: 600;
+}
+#about p
+{
+    overflow: hidden;
+}
+.spn
+{
+    display: inline-block;
+    width: 0px;
+    color: #00c3da;
+    position: relative;
+    top:0;
+    left: 100%;
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes move
+{
+    0% {left:100%; top:0;}
+    80%{opacity:0;}
+    100% {left:0%; top:0; width:40px;} 
+}
+.about
+{
+    border-top: 1px rgba(128,128,128,.2) solid;
+    border-bottom: 1px rgba(128,128,128,.2) solid;
+
+}
+.about .nav-link
+{
+    font-size: 11;
+    font-weight: 600;
+}
+.t-head h1
+{
+    font-size: 80px;
+    font-weight: 700;
+    color: rgba(128, 128, 128, .1);
+    position: relative;
+}
+.t-head h2
+{
+    font-weight: 800;
+    font-size: 40;
+    position: absolute;
+}
+.title p
+{
+    font-weight: 600;
+}
+.img
+{
+    position: relative;
+    overflow: hidden;
+}
+.img .layer
+{
+    background-color: rgba(0, 191, 216, 0.9);
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top:100%;
+    left:0;
+    transition: all 0.2s;
+}
+.img:hover .layer
+{
+    height: 100%;
+    top:0;
+    transition: .7s ease-in;
+}
+.img .layer .l-footer h6
+{
+    font-size: 16;
+    padding-top: 80;
+}
+.img .layer .l-footer p
+{
+    font-size: 12;
+}
+.img .layer i
+{
+    padding-top:25px ;
+}
+#service
+{
+    background-image: url(../images/asset\ 48.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+#service .blayer
+{
+    background-color: rgba(0,0,0,.5);
+}
+.service i
+{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.do .do-title h1
+{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(128,128,128,.9);
+    position: relative;
+}
+.do .do-title h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+}
+.to-do ul li
+{
+    list-style: none;
+    padding-bottom: 15px;
+}
+.to-do ul li i
+{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding:3px;
+    font-size: 9px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.work-title h1
+{
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(128,128,128,.2);
+    position: relative;
+}
+.work-title h2
+{
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+}
+.work-img
+{
+    position: relative;
+    overflow: hidden;
+}
+.work-img img
+{
+    transition: all 1s;
+}
+.work-img .work-info
+{
+    position: absolute;
+    bottom:-40%;
+    left:10%;
+    width: 80%;
+    transition: all 1s;
+}
+.work-img:hover img
+{
+    transform: scale(1.2,1.2);
+    transition: all 1s;
+}
+.work-img:hover .work-info
+{
+    bottom:5%;
+    transition: all 1s .4s;
+}
+.price h2
+{
+    font-size: 50;
+    font-weight: 600;
+}
+.price .dollar
+{
+    font-size: 16px;
+    position: relative;
+    top:-30;
+}
+.price ul
+{
+    padding-left: 0;
+}
+.price ul li
+{
+    list-style: none;
+    padding-top: 15px;
+}
+.customers .happy
+{
+    font-size: 14;
+    font-weight: 600;
+}
+.customers .cst img
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.customers .cst
+{
+    position: relative;
+}
+.customers .cst-content h2
+{
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 0;
+}
+.cst .cst-content span
+{
+    padding: 30px 0 50;
+}
+.cst .cst-content p
+{
+    font-size: 18px;
+    font-weight: 300;
+    color: grey;
+}
+.customers .carousel-indicators li
+{
+    background-color: grey;
+    width: 10;
+    height: 10;
+    border-radius: 50%;
+}
+.customers .carousel-indicators .active
+{
+    background-color: #00c3da;
+}
+#contact form label
+{
+    padding: 30px 0 2px;
+}
+#contact form textarea
+{
+    resize: none;
+}
